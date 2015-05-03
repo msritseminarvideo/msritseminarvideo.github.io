@@ -16,6 +16,12 @@
 	padding: 0;
 }
 
+/*
+.grid-gallery li {
+	height: 500px;
+}
+*/
+
 .grid-gallery figure {
 	margin: 0;
 }
@@ -189,6 +195,32 @@
 	right: 0;
 	padding: 0.5em 1em;
 	color: #31373a;
+}
+
+.ok:after {
+	width: 30px;
+	height: 30px;
+	left: -12px;
+	font-size: 100%;
+	top: -8px;
+	font-size: 100%;
+	position: relative;
+}
+.ok:hover:before {
+	content: attr(data-content);
+	text-transform: none;
+	text-indent: 0;
+	letter-spacing: 0;
+	font-weight: 100;
+	font-size: 100%;
+	padding: 0.8em 1em;
+	line-height: 1.2;
+	text-align: left;
+	left: auto;
+	margin-left: 4px;
+	position: absolute;
+	color: #fff;
+	background: #47a3da;
 }
 
 .icon:before,

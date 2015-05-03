@@ -100,7 +100,7 @@
 								<?php
 								$row = 0;
 								if (($handle = fopen("test.csv", "r")) !== FALSE) {
-									while ((($data = fgetcsv($handle,1000, ",")) !== FALSE) and ($row<73))  {
+									while ((($data = fgetcsv($handle,1000, ",")) !== FALSE) and ($row<72))  {
 										//$num = count($data);
 										//echo "<p> $num fields in line $row: <br /></p>\n";
 										if($row!=0 )
@@ -122,8 +122,7 @@
 										}
 											
 										$row++;
-										if($row/4==0){ echo '<hr>
-										'; }
+										
 										
 									}
 									fclose($handle);
@@ -151,13 +150,13 @@
 						<?php
 								$row = 0;
 								if (($handle = fopen("test.csv", "r")) !== FALSE) {
-									while ((($data = fgetcsv($handle,1000, ",")) !== FALSE) and ($row<73))  {
+									while ((($data = fgetcsv($handle,1000, ",")) !== FALSE) and ($row<72))  {
 										//$num = count($data);
 										//echo "<p> $num fields in line $row: <br /></p>\n";
-										if($row!=1)
+										if($row!=0)
 										{
 											echo '<li> <figure>';
-											echo '<figcaption> <h3>'.$data[0].'</h3>';
+											echo '<figcaption> <h3 class="ok" data-content="By '.$data[9].'">'.$data[0].'</h3>';
 											echo '<p>'.$data[5].'</p></figcaption>';
 											if($data[6]==$not)
 											{
