@@ -120,9 +120,9 @@
 
 .slideshow li {
 	width: 660px;
-	height: 560px;
+	height: 600px;
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	left: 50%;
 	margin: -280px 0 0 -330px;
 	visibility: hidden;
